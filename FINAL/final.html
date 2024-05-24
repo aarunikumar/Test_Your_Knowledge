@@ -1,0 +1,91 @@
+
+<html>
+	<title>Test Your Knowledge</title>
+		<link href="t.png" rel="icon">
+	<head>
+		<script>
+			const user=()=>{
+				let id=localStorage.getItem("temp");
+				document.getElementById("id1").value=id;
+				localStorage.removeItem("temp");
+			}
+			const result=()=>{
+				location.href="result.html";
+			}
+			const res=()=>{
+				let r=sessionStorage.getItem("temp");
+				let p=(r*100)/5;
+				document.getElementById("r1").value=r;
+				document.getElementById("p1").value=p;
+			}
+		</script>
+		<style>
+			body{
+				background-image: url('third.jpg');
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+			}
+			h2{
+				margin-top:50px;
+				text-align:center;
+				font-size:50px;
+				font-family:  cursive;
+			}
+			
+			p{
+				margin-top:60px;
+				text-align:center;
+				font-size:26px;
+				font-family:  cursive;
+			}
+			.l1{
+				margin-left:300px;
+				font-size:23px;
+				font-family:  cursive;
+			}
+			h3{	
+				font-size:23px;
+				font-family:  cursive;
+				margin-left:600px;}
+			div{
+				border:solid black;
+				border-radius:50px;
+				margin-top:50px;
+				margin-left:360px;
+				height:350px;
+				width:850px;
+				background-color: rgba(0,0,0, 0.2);
+			
+			}
+			.result{
+				width: 500px;
+				height: 250px;
+  				background: transparent;
+  				transition: width 2s, height 2s, transform 2s;
+			}
+			/* .result:hover {
+  				width: 420px;
+  				height: 200px;
+				background: #c7fcff;
+				border-radius:12px;
+  				transform: rotate(360deg);
+			} */
+		</style>
+	</head>
+	<body onload="user(),res()">
+		<h3 class="result">You Got Score : <input type="text" id="p1" style="margin-top:23px;font-size:20px;width:30px; margin-left:5px; height:20px;background: transparent;border: none;">%</b><br>
+		Number of correct questions is : <input type="text" id="r1" style="margin-top:23px;font-size:20px;width:20px; margin-left:5px; height:20px;background: transparent;border: none;"></b><br><br>
+		Total no. questions is : <b>5</b></h3>
+		<div>
+		
+			<h2>Thank you!!!!<br></h2>
+			<input type="text" id="id1" style="font-size:35px;width:300px; margin-top:20px;
+			font-family:cursive; margin-left:290px;text-align:center; height:40px; background: transparent; border: none;"></b> 
+		</div>
+		
+			
+		
+		
+
+	</body>
+</html>

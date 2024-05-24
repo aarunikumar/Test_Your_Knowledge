@@ -1,0 +1,31 @@
+body{
+background-image: url('second.jpg');
+background-repeat: no-repeat;
+background-size: 100% 100%;
+
+
+}
+/* div{border:solid black;
+border-radius:50px;
+margin-top:100px;
+margin-left:100px;
+height:500px;
+width:850px;
+background-color: rgba(0,0,0, 0.2);
+
+} */
+li{margin-left:40px;
+font-size:23px;
+font-family:  cursive;
+}
+.c1{
+width:20px;
+height:20px;
+font-size:20px;
+}
+
+label{
+margin-left:1300px;
+font-size:23px;
+font-family:  cursive;
+}
